@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<WebService uuid="e8bad6c1-8495-43c9-9763-4f203a2c4fc4">
+		<Properties>
+			<Name>KernelReceiver</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Kernel receiver</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Основной приемник (обработчик входящих запросов)</Comment>
+			<Namespace>http://www.KernelReceiver_zup.com</Namespace>
+			<XDTOPackages>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xs:string">http://v8.1c.ru/8.1/data/core</xr:Value>
+				</xr:Item>
+			</XDTOPackages>
+			<DescriptorFileName>KernelReceiver_zup.1cws</DescriptorFileName>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<Operation uuid="82b12e21-541e-45e3-b649-b0800905b593">
+				<Properties>
+					<Name>ВыполнитьЗапрос</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнить запрос</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>ВыполнитьЗапрос</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="67a59634-60f6-46d8-bd84-9cd9ab80c4d9">
+						<Properties>
+							<Name>ТекстЗапроса</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст запроса</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Строка</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="21190a55-bf9a-47db-9732-526ab37b4e6d">
+						<Properties>
+							<Name>Параметры</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>ЗначениеВСтрокуВнутр(Структура)</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="bf7acf3a-95db-420f-a57a-29fa942e088d">
+						<Properties>
+							<Name>ТипОбходаЗапроса</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип обхода запроса</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Строка</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+		</ChildObjects>
+	</WebService>
+</MetaDataObject>
